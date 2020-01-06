@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Icon } from 'antd';
 import AdminLess from './admin.module.less'
 
 import SilderNav from "../../components/silderNav/silderNav"
@@ -17,8 +17,6 @@ class Admin extends Component{
               <Header style={{ background: '#fff', padding: 0 }}>
                 <Icon
                   className="trigger"
-                 
-                 
                 />
               </Header>
               <Content
