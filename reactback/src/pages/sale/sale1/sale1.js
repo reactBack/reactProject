@@ -18,7 +18,7 @@ class Sale1 extends Component{
             legend: {
                 left: 'center',
                 top: 'bottom',
-                data: ['rose1', 'rose2', 'rose3', 'rose4', 'rose5', 'rose6', 'rose7', 'rose8']
+                data: ['上衣','裤子','鞋']
             },
             toolbox: {
                 show: true,
