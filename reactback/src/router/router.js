@@ -5,9 +5,9 @@ import Admin from '../pages/admin/admin';
 import Cancel from '../pages/cancel/cancel'
 import NewAdd from '../pages/newAdd/newAdd'
 import Home from  '../pages/home/home'
-import Sale from '../pages/sale/sale'
 import Stock from '../pages/stock/stock'
-
+import Sale1 from '../pages/sale/sale1/sale1'
+import Sale2 from '../pages/sale/sale2/sale2'
 
 
 
@@ -29,7 +29,8 @@ class ReactApp extends Component{
                                     <Route path='/admin/newAdd' component={NewAdd}></Route>
                                     <Route path='/admin/stock' component={Stock}></Route>
                                     <Route path='/admin/cancel' component={Cancel}></Route>
-                                    <Route path='/admin/sale' component={Sale}></Route>
+                                    <Route path='/admin/sale1' component={Sale1}></Route>
+                                    <Route path='/admin/sale2' component={Sale2}></Route>
                                 </Switch>
                             </Admin>
                         )
