@@ -10,7 +10,17 @@ export default [
     name:'销售数据',
     icon:'setting',
     path:'/admin/sale',
-    id:'1'
+    id:'1',
+    children:[
+      {
+        name:'库存数据',
+        path:'/admin/sale1'
+      },
+      {
+        name:'销量数据',
+        path:'/admin/sale2'
+      }
+    ]
   },
   {
     name:'新增订单',
