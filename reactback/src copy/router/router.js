@@ -15,7 +15,6 @@ class ReactApp extends Component{
     render(){
         return(
             <HashRouter>
-            <Redirect exact from='/' to='/login'></Redirect>
                 <NavLink to='/login'></NavLink>
                 <NavLink to='/admin'></NavLink>  
                 
