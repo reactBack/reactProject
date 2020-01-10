@@ -8,7 +8,6 @@ class Sale1 extends Component{
         option:{
             title: {
                 text: '库存数量图',
-                subtext: '纯属虚构',
                 left: 'center'
             },
             tooltip: {
@@ -18,7 +17,7 @@ class Sale1 extends Component{
             legend: {
                 left: 'center',
                 top: 'bottom',
-                data: ['上衣','裤子','鞋']
+                data: ['上衣','裤子','鞋','上衣','裤子','鞋']
             },
             toolbox: {
                 show: true,
