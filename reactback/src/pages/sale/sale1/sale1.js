@@ -1,5 +1,6 @@
 import React,{Fragment,Component} from 'react';
 import ReactEcharts from 'echarts-for-react';
+import axios from 'axios'
 import './sale1.css'
 class Sale1 extends Component{
   constructor(){
@@ -71,6 +72,16 @@ class Sale1 extends Component{
             ]
         } 
   }
+}
+componentDidMount(){
+    let url = 'http://10.60.14.27:3003/get/Stocks/ByType'
+     axios.post(url)
+     .then((res)=>{
+         console.log(res)
+     })
+     .catch((err)=>{
+         console.log(err)
+     })
 }
     render(){
       let {option} = this.state
