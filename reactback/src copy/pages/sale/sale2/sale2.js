@@ -1,14 +1,14 @@
 import React,{Fragment,Component} from 'react';
 import ReactEcharts from 'echarts-for-react';
 import './sale.css'
-class Sale extends Component{
+class Sale2 extends Component{
   constructor(){
     super()
     this.state={
       option : {
         title: {
-            text: '某站点用户访问来源',
-            subtext: '纯属虚构',
+            text: '服装销售图',
+            // subtext: '纯属虚构',
             left: 'center'
         },
         tooltip: {
@@ -18,7 +18,7 @@ class Sale extends Component{
         legend: {
             orient: 'vertical',
             left: 'left',
-            data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+            data: ['上衣', '裤子', '鞋']
         },
         series: [
             {
@@ -27,12 +27,13 @@ class Sale extends Component{
                 radius: '55%',
                 center: ['50%', '60%'],
                 data: [
-                    {value: 335, name: '直接访问'},
-                    {value: 310, name: '邮件营销'},
-                    {value: 234, name: '联盟广告'},
-                    {value: 135, name: '视频广告'},
-                    {value: 1548, name: '搜索引擎'}
-                ],
+                    {value: 335, name: '上衣'},
+                    {value: 310, name: '裤子'},
+                    {value: 234, name: '鞋'}
+                    // {value: 135, name: '帽子'},
+                    // {value: 109, name: '围巾'},
+                    // {value: 50, name: '袜子'}
+                ],  
                 emphasis: {
                     itemStyle: {
                         shadowBlur: 10,
@@ -41,6 +42,7 @@ class Sale extends Component{
                     }
                 }
             }
+            
         ]
       }
     }
@@ -54,4 +56,4 @@ class Sale extends Component{
       )
   }
 }
-export default Sale;
+export default Sale2;
